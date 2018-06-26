@@ -10,6 +10,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "capitano": "^1.7.4",
+    "chalk": "^2.4.1",
     "config": "^1.30.0",
     "get-env": "^0.5.10",
     "husky": "^0.14.3",
