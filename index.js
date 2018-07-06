@@ -8,7 +8,7 @@ const chalk = require("chalk");
 var jsonfile = require("jsonfile");
 var PinejsClient = require("pinejs-client");
 
-const DAYS_AGO = 28;
+const DAYS_AGO = 14;
 const HIGHLIGHT_COUNT = 30;
 
 const env = require("get-env")({
@@ -112,7 +112,7 @@ var getDevices = async () => {
     _.each(app.devices, version => {
       const message = `\t${version.version.padEnd(10)}: ${version.count}`;
       const line =
-        version.count > HIGHLIGHT_COUNT ? chalk.bgRed.bold(message) : message;
+        version.count >= HIGHLIGHT_COUNT ? chalk.bgRed.bold(message) : message;
       console.log(line);
     });
     const message = `\t${"Total".padEnd(10)}: ${app.total_count}`;
