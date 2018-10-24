@@ -18,7 +18,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "pinejs-client": "^4.3.2",
-    "resin-semver": "^1.3.0"
+    "resin-semver": "^1.4.0"
   },
   "devDependencies": {
     "husky": "^0.14.3",
